@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML & CSS </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>HTML & CSS コーディングルール（作成中）</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>1. ファイルの作り方 & 名前の付け方</h2>
+            <p>ファイル名は **半角英数字 & 小文字** にする。</p> 
+            <pre class="code">
+❌ NG: AboutUs.HTML, main-STYLE.CSS
+✅ OK: about-us.html, main-style.css
+            </pre>
+        </section>
+
+        <section>
+            <h2>2. HTMLの書き方ルール</h2>
+            <p>インデントは **TABキー** で統一する。</p>
+            <pre class="code">
+❌ NG:
+&lt;div&gt;
+&lt;p&gt;こんにちは&lt;/p&gt;
+&lt;/div&gt;
+
+✅ OK:
+&lt;div&gt;
+    &lt;p&gt;こんにちは&lt;/p&gt;
+&lt;/div&gt;
+            </pre>
+        </section>
+
+        <section>
+            <h2>3. CSSの書き方ルール</h2>
+            <p>クラス名は **意味がわかる名前** にする。</p>
+            <pre class="code">
+❌ NG:
+.button1 { ... }
+.div-red { ... }
+
+✅ OK:
+.btn-primary { ... }
+.alert-message { ... }
+            </pre>
+        </section>
+
+        <section>
+            <h2>4. フォルダ構成のルール</h2>
+            <p>フォルダは **役割ごとに分ける**。</p>
+            <pre class="code">
+/project-root/
+│── index.html
+│── /css/
+│   │── styles.css
+│── /images/
+│── /js/
+│   │── main.js
+            </pre>
+        </section>
+
+        <section>
+            <h2>5. よくあるミスと対策</h2>
+            <p>リンクは **相対パス** を使う。</p>
+            <pre class="code">
+❌ NG:
+&lt;img src="C:\Users\MyPC\Desktop\image.jpg"&gt;
+
+✅ OK:
+&lt;img src="images/photo.jpg"&gt;
+            </pre>
+        </section>
+    </main>
+</body>
+</html>
