@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <h1>ナレッジベース（作成中）</h1>
+        <h1>ナレッジベース</h1>
     </header>
 
     <div class="tabs">
@@ -90,25 +90,105 @@
         <main>
             <section>
                 <h2>1.おまじない</h2>
+                <p>サイト作成に必須のタグたちです。コーディング初手に記述してください</p>
+                <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="ja"&gt;
+    &lt;head&gt;
+        &lt;meta charset="UTF-8"&gt;
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+        &lt;link rel="stylesheet" href="styles.css"&gt;
+        &lt;link rel="icon" href="favicon.ico"&gt;
+        &lt;title&gt;タイトルを入力&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;header&gt;
+            &lt;h1&gt;見出し1&lt;/h1&gt;
+        &lt;/header&gt;
+        &lt;main&gt;
+            &lt;section&gt;
+                &lt;h2&gt;見出し2&lt;/h2&gt;
+            &lt;/section&gt;
+        &lt;/main&gt;
+    &lt;/body&gt;
+&lt;/html>
+                </pre>
             </section>
             <section>
                 <h2>2.よく使うタブ</h2>
-                <h3>⚫️ 見出し系 ⚫️</h3>
+                <h3>⚫️ h1~h6タグ ⚫️</h3>
+                <p>見出しを作成する際に使用します。</p>
                 <pre class="code">
 📌 h1タグ（ Wordでいう「見出し1」）
     &lt;h1&gt;見出し1&lt;/h1&gt;
 📌 h2タグ（ Wordでいう「見出し2」）
     &lt;h2&gt;見出し2&lt;/h2&gt;
-※ 他にも「h3」「h4」「h5」「h6」タグが存在する。
+※「h3」「h4」「h5」「h6」タグも同様
                 </pre>
 
-                <h3>⚫️ divタグ ⚫️</h3>
                 <h3>⚫️ pタグ ⚫️</h3>
-                <h3>⚫️ brタグ ⚫️</h3>
+                <p>テキストの段落を作成する先に使用します。</p>
+                <p>※改行目的には使わない！改行はbrタグを使う！</p>
+                <pre class="code">
+📌 pタグで段落作成
+    &lt;p&gt;段落作成（ただし改行目的には使用しない）&lt;/p&gt;
+                </pre>
+
+                <h3>⚫️ aタグ ⚫️</h3>
+                <p>リンクを埋め込む際に使用します</p>
+                <pre class="code">
+📌 href属性にリンク先を指定する
+    &lt;a href="https://~~~~"&gt;ここをクリックするとhrefで指定したリンクに遷移&lt;a&gt;
+📌 target属性を追加して別タブで開くかどうか指定する
+    &lt;a href="https://~~~~" target="_blank"&gt;リンク先のページを別タブで開く&lt;a&gt;
+                </pre>
+
+                <h3>⚫️ ulタグ, olタグ, liタグ ⚫️</h3>
+                <p>箇条書きしたい際、リストを作成したい際に使用します</p>
+                <pre class="code">
+📌 ulタグとliタグで順序のないリストを作成
+    &lt;ul&gt;
+        &lt;li&gt;ここに内容を入力&lt;/li&gt;
+        &lt;li&gt;ulタグの中にliタグを記述する&lt;/li&gt;
+    &lt;ul&gt;
+📌 olタグとliタグで順序のあるリストを作成
+    &lt;ul&gt;
+        &lt;li&gt;ここに内容を入力&lt;/li&gt;
+        &lt;li&gt;olタグの中にliタグを記述する&lt;/li&gt;
+    &lt;ul&gt;
+                </pre>
+
+                <h3>⚫️ aタグ ⚫️</h3>
+                <p>画像を表示させる際に使用します</p>
+                <pre class="code">
+📌 src属性でファイル名を指定
+    &lt;img src="sample.jpg" /&gt;
+    ※imgタグは空要素と呼ばれ、要素の中身がないタグ。空要素は上記のように記述できる。
+                </pre>
+                
+                <h3>⚫️ sectionタグ ⚫️</h3>
+                <p>見出しを含む文書をグループ化する際に使用します</p>
+                <pre>
+📌 sectionでh2を含む文書をグループ化
+    &lt;section&gt;
+        &lt;h2&gt;&lt;/h2&gt;
+        &lt;p&gt;段落作成&lt;/p&gt;
+    &lt;/section&gt;
+    ※h1~h6を含む必要がある
+                </pre>
+                
+                <h3>⚫️ divタグ ⚫️</h3>
+                <p>制限なくグループ化する際に使用します</p>
+                <pre>
+📌 imgタグもグループ化できる
+    &lt;div&gt;
+        &lt;img src="sample.jpg" /&gt;
+    &lt;div&gt;
+                </pre>
             </section>
 
             <section>
-                <h2>3.cssの指定方法</h2>
+                <h2>3.cssの指定方法（作成中）</h2>
                 <h3>⚫️ id属性を設定し、指定する方法 ⚫️</h3>
                 <h3>⚫️ class属性を設定し、指定する方法 ⚫️</h3>
                 <h3>⚫️ タグを直接指定する方法 ⚫️</h3>
